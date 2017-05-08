@@ -1,0 +1,49 @@
+{
+  "name": "norder",
+  "version": "0.0.0",
+  "description": "Check point-order option values.",
+  "main": "norder.js",
+  "support": "norder.support.js",
+  "deploy": "norder.deploy.js",
+  "browser": "norder.deploy.js",
+  "scripts": {
+    "build": "babel norder.js --out-file norder.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha norder-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/norder.git"
+  },
+  "keywords": [
+    "check",
+    "point",
+    "order",
+    "option",
+    "value",
+    "norder"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/norder/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/norder#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "crount": "^0.0.0",
+    "falze": "^0.22.0",
+    "kount": "^0.10.0",
+    "maxelm": "^0.0.0",
+    "protype": "^0.21.0",
+    "valu": "^0.0.0",
+    "wichevr": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.5.1"
+  }
+}
