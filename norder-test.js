@@ -17,6 +17,12 @@ assert.equal( norder( {
 assert.equal( norder( {
 	"apple": 0,
 	"cherry": 1,
+	"orange": 3
+} ), false, "should be false" );
+
+assert.equal( norder( {
+	"apple": 0,
+	"cherry": 1,
 	"orange": 1
 } ), false, "should be false" );
 

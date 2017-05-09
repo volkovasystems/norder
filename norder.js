@@ -86,13 +86,19 @@ const norder = function norder( order, maximum ){
 		throw new Error( "invalid maximum" );
 	}
 
-	let position = valu( order );
+	order = valu( order );
 
-	if( maxelm( position ) > maximum ){
+	/*;
+		@note:
+			Order uses zero-based index so the maximum index should
+				not be equal to the maximum length.
+		@end-note
+	*/
+	if( maxelm( order ) >= maximum ){
 		return false;
 	}
 
-	if( position.some( ( index ) => ( crount( position, index ) > 1 ) ) ){
+	if( order.some( ( index ) => ( crount( order, index ) > 1 ) ) ){
 		return false;
 	}
 
