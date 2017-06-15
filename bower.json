@@ -1,11 +1,13 @@
 {
   "name": "norder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Check point-order option values.",
   "main": "norder.deploy.js",
   "support": "norder.support.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -25,12 +27,12 @@
     "tests"
   ],
   "dependencies": {
-    "crount": "^0.0.0",
-    "falze": "^0.22.0",
-    "kount": "^0.10.0",
-    "maxelm": "^0.0.0",
-    "protype": "^0.21.0",
-    "valu": "^0.0.0",
-    "wichevr": "^0.9.0"
+    "crount": "^0.1.0",
+    "falze": "^0.23.0",
+    "kount": "^0.11.0",
+    "maxelm": "^0.1.0",
+    "protype": "^0.22.0",
+    "valu": "^0.2.0",
+    "wichevr": "^0.10.0"
   }
 }
