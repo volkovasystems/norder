@@ -1,12 +1,19 @@
 
 const assert = require( "assert" );
 const norder = require( "./norder.js" );
-
+/*
 assert.equal( norder( {
 	"apple": 0,
 	"cherry": 1,
 	"orange": 2
 } ), true, "should be true" );
+*/
+
+console.log( norder( {
+	"apple": 0,
+	"cherry": 1,
+	"orange": 2
+} ) );
 
 assert.equal( norder( {
 	"apple": 0,

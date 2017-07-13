@@ -55,7 +55,6 @@
 			"falze": "falze",
 			"kount": "kount",
 			"maxelm": "maxelm",
-			"protype": "protype",
 			"valu": "valu",
 			"wichevr": "wichevr"
 		}
@@ -66,7 +65,6 @@ const crount = require( "crount" );
 const falze = require( "falze" );
 const kount = require( "kount" );
 const maxelm = require( "maxelm" );
-const protype = require( "protype" );
 const valu = require( "valu" );
 const wichevr = require( "wichevr" );
 
@@ -80,13 +78,13 @@ const norder = function norder( order, maximum ){
 		@end-meta-configuration
 	*/
 
-	if( falze( order ) || !protype( order, OBJECT ) ){
+	if( falze( order ) || typeof( order != "object" ) ){
 		return false;
 	}
 
 	maximum = wichevr( maximum, kount( order ) );
 
-	if( !protype( maximum, NUMBER ) ){
+	if( typeof maximum != "number" ){
 		throw new Error( "invalid maximum" );
 	}
 
