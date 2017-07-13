@@ -4,7 +4,6 @@ crount \
 falze \
 kount \
 maxelm \
-protype \
 valu \
 wichevr \
 --save && \
@@ -21,7 +20,6 @@ crount \
 falze \
 kount \
 maxelm \
-protype \
 valu \
 wichevr \
 --save \

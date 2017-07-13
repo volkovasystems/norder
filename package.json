@@ -1,6 +1,6 @@
 {
   "name": "norder",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Check point-order option values.",
   "main": "norder.js",
   "support": "norder.support.js",
@@ -34,13 +34,12 @@
   "homepage": "https://github.com/volkovasystems/norder#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "crount": "^0.1.0",
-    "falze": "^0.23.0",
+    "crount": "^0.2.0",
+    "falze": "^0.25.0",
     "kount": "^0.11.0",
-    "maxelm": "^0.1.0",
-    "protype": "^0.22.0",
-    "valu": "^0.2.0",
-    "wichevr": "^0.10.0"
+    "maxelm": "^0.2.0",
+    "valu": "^0.4.0",
+    "wichevr": "^0.13.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -48,6 +47,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.6.1"
+    "webpack": "^3.2.0"
   }
 }
