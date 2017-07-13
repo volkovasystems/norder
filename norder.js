@@ -78,7 +78,7 @@ const norder = function norder( order, maximum ){
 		@end-meta-configuration
 	*/
 
-	if( falze( order ) || typeof( order != "object" ) ){
+	if( falze( order ) || typeof order != "object" ){
 		return false;
 	}
 
