@@ -1,48 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>norder unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:norder</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./norder.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "norder unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( norder( {
-					"apple": 0,
-					"cherry": 1,
-					"orange": 2
-				} ), true, "should be equal to true" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.equal( norder( {
-					"apple": 0,
-					"cherry": 1,
-					"orange": 5
-				} ), false, "should be equal to false" );
-
-				assert.equal( norder( {
-					"apple": 0,
-					"cherry": 1,
-					"orange": 3
-				} ), false, "should be equal to false" );
-
-				assert.equal( norder( {
-					"apple": 0,
-					"cherry": 1,
-					"orange": 1
-				} ), false, "should be equal to false" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>

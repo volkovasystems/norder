@@ -48,7 +48,7 @@
 	},
 	"homepage": "https://github.com/volkovasystems/norder#readme",
 	"dependencies": {
-		"babel-runtime": "^6.25.0",
+		"babel-runtime": "^6.26.0",
 		"crount": "^0.3.0",
 		"falze": "^0.26.0",
 		"kount": "^0.12.0",
