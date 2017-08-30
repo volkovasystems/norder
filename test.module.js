@@ -70,6 +70,54 @@ const path = require( "path" );
 
 describe( "norder", ( ) => {
 
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 2 } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 2
+			} ), true );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 5 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 5
+			} ), false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 3 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 3
+			} ), false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 1 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 1
+			} ), false );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +126,55 @@ describe( "norder", ( ) => {
 //: @client:
 
 describe( "norder", ( ) => {
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 2 } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 2
+			} ), true );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 5 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 5
+			} ), false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 3 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 3
+			} ), false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 1 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 1
+			} ), false );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +183,97 @@ describe( "norder", ( ) => {
 //: @bridge:
 
 describe( "norder", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 2 } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					return norder( {
+						"apple": 0,
+						"cherry": 1,
+						"orange": 2
+					} );
+
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 5 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					return norder( {
+						"apple": 0,
+						"cherry": 1,
+						"orange": 5
+					} );
+
+				}
+
+			).value;
+
+			assert.equal( result, false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 3 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					return norder( {
+						"apple": 0,
+						"cherry": 1,
+						"orange": 3
+					} );
+
+				}
+
+			).value;
+
+			assert.equal( result, false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 1 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					return norder( {
+						"apple": 0,
+						"cherry": 1,
+						"orange": 1
+					} );
+
+				}
+
+			).value;
+
+			assert.equal( result, false );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge

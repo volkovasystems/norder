@@ -66,6 +66,54 @@ const norder = require( "./norder.js" );
 
 describe( "norder", ( ) => {
 
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 2 } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 2
+			} ), true );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 5 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 5
+			} ), false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 3 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 3
+			} ), false );
+
+		} );
+	} );
+
+	describe( "`norder( { 'apple': 0, 'cherry': 1, 'orange': 1 } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( norder( {
+				"apple": 0,
+				"cherry": 1,
+				"orange": 1
+			} ), false );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

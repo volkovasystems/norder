@@ -25,5 +25,13 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"crount": "^0.3.0",
+		"falze": "^0.26.0",
+		"kount": "^0.12.0",
+		"maxelm": "^0.4.0",
+		"valu": "^0.6.0",
+		"wichevr": "^0.14.0"
+	}
 }

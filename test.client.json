@@ -1,0 +1,180 @@
+{
+	"state": {
+		"passed": 4,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-30T04:11:09.012Z",
+	"end": "2017-08-30T04:11:54.574Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "norder",
+			"duration": 0,
+			"start": "2017-08-30T04:11:54.168Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "norder",
+			"duration": 229,
+			"start": "2017-08-30T04:11:54.168Z",
+			"end": "2017-08-30T04:11:54.397Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-30T04:11:54.169Z",
+					"end": "2017-08-30T04:11:54.170Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-30T04:11:54.270Z",
+					"end": "2017-08-30T04:11:54.270Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-30T04:11:54.271Z",
+					"end": "2017-08-30T04:11:54.271Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-30T04:11:54.319Z",
+					"end": "2017-08-30T04:11:54.319Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-30T04:11:54.319Z",
+					"end": "2017-08-30T04:11:54.319Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-30T04:11:54.358Z",
+					"end": "2017-08-30T04:11:54.358Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-30T04:11:54.358Z",
+					"end": "2017-08-30T04:11:54.358Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-30T04:11:54.397Z",
+					"end": "2017-08-30T04:11:54.397Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "norder",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-30T04:11:54.397Z",
+					"end": "2017-08-30T04:11:54.398Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "norder"
+				}
+			]
+		},
+		{
+			"name": "`norder( { 'apple': 0, 'cherry': 1, 'orange': 2 } )`",
+			"duration": 103,
+			"start": "2017-08-30T04:11:54.168Z",
+			"end": "2017-08-30T04:11:54.271Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-30T04:11:54.169Z",
+					"end": "2017-08-30T04:11:54.269Z",
+					"duration": 100,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`norder( { 'apple': 0, 'cherry': 1, 'orange': 5 } )`",
+			"duration": 48,
+			"start": "2017-08-30T04:11:54.271Z",
+			"end": "2017-08-30T04:11:54.319Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-30T04:11:54.271Z",
+					"end": "2017-08-30T04:11:54.319Z",
+					"duration": 48,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`norder( { 'apple': 0, 'cherry': 1, 'orange': 3 } )`",
+			"duration": 39,
+			"start": "2017-08-30T04:11:54.319Z",
+			"end": "2017-08-30T04:11:54.358Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-30T04:11:54.319Z",
+					"end": "2017-08-30T04:11:54.358Z",
+					"duration": 39,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`norder( { 'apple': 0, 'cherry': 1, 'orange': 1 } )`",
+			"duration": 39,
+			"start": "2017-08-30T04:11:54.358Z",
+			"end": "2017-08-30T04:11:54.397Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-30T04:11:54.358Z",
+					"end": "2017-08-30T04:11:54.397Z",
+					"duration": 39,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

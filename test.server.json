@@ -1,16 +1,74 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-17T14:43:38.011Z",
-    "end": "2017-08-17T14:43:38.012Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 5,
+		"tests": 4,
+		"passes": 4,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-30T04:11:07.808Z",
+		"end": "2017-08-30T04:11:07.815Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 2 } )` should be equal to true",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 5 } )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 3 } )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 1 } )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 2 } )` should be equal to true",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 5 } )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 3 } )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "norder `norder( { 'apple': 0, 'cherry': 1, 'orange': 1 } )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
